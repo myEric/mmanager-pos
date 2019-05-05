@@ -1,0 +1,31 @@
+{
+	"description": "m'Manager POS",
+	"name": "myeric/mmanager-pos",
+	"type": "project",
+	"homepage": "https://mmanager.fr",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forums.mmanager.fr/",
+		"source": "https://store.mmanager.fr"
+	},
+	"require": {
+		"php": ">=7.0",
+		"florianv/swap": "^3.2",
+		"php-http/message": "^1.6",
+		"php-http/guzzle6-adapter": "^1.1",
+		"stripe/stripe-php": "^5.7",
+		"owasp/phprbac": "2.0.*@dev",
+		"asgrim/ofxparser": "^1.2",
+		"mpdf/mpdf": "^7.1",
+		"myclabs/deep-copy": "^1.8",
+		"automattic/woocommerce": "^2.0",
+		"phpmailer/phpmailer": "^6.0"
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.1.*",
+		"pds/skeleton": "~1.0"
+	}
+}
