@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace User;
 
 /**
- * The configuration provider for the User module
+ * The configuration provider for the App module
  *
  * @see https://docs.zendframework.com/zend-component-installer/
  */
@@ -16,6 +16,7 @@ class ConfigProvider
      *
      * To add a bit of a structure, each section is defined in a separate
      * method which returns an array with its configuration.
+     *
      */
     public function __invoke() : array
     {
@@ -31,9 +32,9 @@ class ConfigProvider
     public function getDependencies() : array
     {
         return [
-            'invokables' => [
-            ],
+            'invokables' => [],
             'factories'  => [
+                Handler\UserHandler::class => Handler\UserHandlerFactory::class,
             ],
         ];
     }
@@ -45,7 +46,7 @@ class ConfigProvider
     {
         return [
             'paths' => [
-                'user'    => [__DIR__ . '/../templates/'],
+                'user'    => [__DIR__ . '/../templates/user'],
             ],
         ];
     }
