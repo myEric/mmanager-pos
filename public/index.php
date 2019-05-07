@@ -1,9 +1,30 @@
 <?php
-// Valid PHP Version?
-$minPHPVersion = '7.0';
-if (phpversion() < $minPHPVersion)
-{
-	die("Your PHP version must be {$minPHPVersion} or higher to run CodeIgniter. Current version: " . phpversion());
+
+declare(strict_types=1);
+
+// Delegate static file requests back to the PHP built-in webserver
+if (PHP_SAPI === 'cli-server' && $_SERVER['SCRIPT_FILENAME'] !== __FILE__) {
+    return false;
 }
-unset($minPHPVersion);
-echo 'Welcome to m\'Manager POS and Invoice Management App';
+
+chdir(dirname(__DIR__));
+require 'vendor/autoload.php';
+
+/**
+ * Self-called anonymous function that creates its own scope and keep the global namespace clean.
+ */
+(function () {
+    /** @var \Psr\Container\ContainerInterface $container */
+    $container = require 'config/container.php';
+
+    /** @var \Zend\Expressive\Application $app */
+    $app = $container->get(\Zend\Expressive\Application::class);
+    $factory = $container->get(\Zend\Expressive\MiddlewareFactory::class);
+
+    // Execute programmatic/declarative middleware pipeline and routing
+    // configuration statements
+    (require 'config/pipeline.php')($app, $factory, $container);
+    (require 'config/routes.php')($app, $factory, $container);
+
+    $app->run();
+})();
