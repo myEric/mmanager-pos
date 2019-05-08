@@ -313,54 +313,6 @@
         ]
     },
     {
-        "name": "nikic/fast-route",
-        "version": "v1.3.0",
-        "version_normalized": "1.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nikic/FastRoute.git",
-            "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
-            "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.8.35|~5.7"
-        },
-        "time": "2018-02-13T20:26:39+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "FastRoute\\": "src/"
-            },
-            "files": [
-                "src/functions.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Nikita Popov",
-                "email": "nikic@php.net"
-            }
-        ],
-        "description": "Fast request router for PHP",
-        "keywords": [
-            "router",
-            "routing"
-        ]
-    },
-    {
         "name": "ocramius/package-versions",
         "version": "1.4.0",
         "version_normalized": "1.4.0.0",
@@ -1412,12 +1364,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Roave/SecurityAdvisories.git",
-            "reference": "21ad2a8155dd437a0926a4d1fedb991bebd4810b"
+            "reference": "4b0bb8d85c965ef52363adfd3c1ef9341d8f0bb8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/21ad2a8155dd437a0926a4d1fedb991bebd4810b",
-            "reference": "21ad2a8155dd437a0926a4d1fedb991bebd4810b",
+            "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4b0bb8d85c965ef52363adfd3c1ef9341d8f0bb8",
+            "reference": "4b0bb8d85c965ef52363adfd3c1ef9341d8f0bb8",
             "shasum": ""
         },
         "conflict": {
@@ -1553,13 +1505,13 @@
             "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
             "tecnickcom/tcpdf": "<6.2.22",
             "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-            "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+            "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
             "theonedemon/phpwhois": "<=4.2.5",
             "titon/framework": ">=0,<9.9.99",
             "truckersmp/phpwhois": "<=4.3.1",
             "twig/twig": "<1.38|>=2,<2.7",
-            "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.23|>=9,<9.5.4",
-            "typo3/cms-core": ">=8,<8.7.23|>=9,<9.5.4",
+            "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.25|>=9,<9.5.6",
+            "typo3/cms-core": ">=8,<8.7.25|>=9,<9.5.6",
             "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
             "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
             "ua-parser/uap-php": "<3.8",
@@ -1599,7 +1551,7 @@
             "zfcampus/zf-apigility-doctrine": ">=1,<1.0.3",
             "zfr/zfr-oauth2-server-module": "<0.1.2"
         },
-        "time": "2019-05-06T17:09:30+00:00",
+        "time": "2019-05-07T15:23:19+00:00",
         "type": "metapackage",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -3074,75 +3026,6 @@
         ]
     },
     {
-        "name": "zendframework/zend-expressive-fastroute",
-        "version": "3.0.2",
-        "version_normalized": "3.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/zendframework/zend-expressive-fastroute.git",
-            "reference": "da91f1ba3d03e3aad58d9f0290518f8e28e2e8f0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zend-expressive-fastroute/zipball/da91f1ba3d03e3aad58d9f0290518f8e28e2e8f0",
-            "reference": "da91f1ba3d03e3aad58d9f0290518f8e28e2e8f0",
-            "shasum": ""
-        },
-        "require": {
-            "fig/http-message-util": "^1.1.2",
-            "nikic/fast-route": "^1.2",
-            "php": "^7.1",
-            "psr/container": "^1.0",
-            "psr/http-message": "^1.0.1",
-            "zendframework/zend-expressive-router": "^3.0",
-            "zendframework/zend-stdlib": "^2.0 || ^3.1"
-        },
-        "conflict": {
-            "container-interop/container-interop": "<1.2.0"
-        },
-        "require-dev": {
-            "malukenho/docheader": "^0.1.6",
-            "mikey179/vfsstream": "^1.6.5",
-            "phpunit/phpunit": "^7.0.2",
-            "zendframework/zend-coding-standard": "~1.0.0",
-            "zendframework/zend-diactoros": "^1.7.1",
-            "zendframework/zend-stratigility": "^3.0"
-        },
-        "time": "2018-08-02T14:10:40+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.0.x-dev",
-                "dev-develop": "3.1.x-dev"
-            },
-            "zf": {
-                "config-provider": "Zend\\Expressive\\Router\\FastRouteRouter\\ConfigProvider"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Zend\\Expressive\\Router\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "description": "FastRoute integration for Expressive",
-        "keywords": [
-            "FastRoute",
-            "ZendFramework",
-            "expressive",
-            "http",
-            "middleware",
-            "psr",
-            "psr-7",
-            "zend-expressive",
-            "zf"
-        ]
-    },
-    {
         "name": "zendframework/zend-expressive-helpers",
         "version": "5.3.0",
         "version_normalized": "5.3.0.0",
@@ -3459,6 +3342,126 @@
         ]
     },
     {
+        "name": "zendframework/zend-expressive-zendrouter",
+        "version": "3.0.0",
+        "version_normalized": "3.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-expressive-zendrouter.git",
+            "reference": "669ee4a1f81bdfad3571c49576c5b65811308b55"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-expressive-zendrouter/zipball/669ee4a1f81bdfad3571c49576c5b65811308b55",
+            "reference": "669ee4a1f81bdfad3571c49576c5b65811308b55",
+            "shasum": ""
+        },
+        "require": {
+            "fig/http-message-util": "^1.1.2",
+            "php": "^7.1",
+            "psr/http-message": "^1.0.1",
+            "zendframework/zend-expressive-router": "^3.0",
+            "zendframework/zend-psr7bridge": "^0.2.2 || ^1.0.0",
+            "zendframework/zend-router": "^3.0.2"
+        },
+        "require-dev": {
+            "malukenho/docheader": "^0.1.6",
+            "phpunit/phpunit": "^7.0.2",
+            "zendframework/zend-coding-standard": "~1.0.0",
+            "zendframework/zend-i18n": "^2.7.4",
+            "zendframework/zend-stratigility": "^3.0"
+        },
+        "time": "2018-03-15T16:26:54+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0.x-dev",
+                "dev-develop": "3.1.x-dev"
+            },
+            "zf": {
+                "config-provider": "Zend\\Expressive\\Router\\ZendRouter\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Expressive\\Router\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "zend-mvc router support for Expressive",
+        "keywords": [
+            "ZendFramework",
+            "expressive",
+            "http",
+            "middleware",
+            "psr",
+            "psr-7",
+            "zend-expressive",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-http",
+        "version": "2.10.0",
+        "version_normalized": "2.10.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-http.git",
+            "reference": "4b4983178693a8fdda53b0bbee58552e2d2b1ac0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-http/zipball/4b4983178693a8fdda53b0bbee58552e2d2b1ac0",
+            "reference": "4b4983178693a8fdda53b0bbee58552e2d2b1ac0",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0",
+            "zendframework/zend-loader": "^2.5.1",
+            "zendframework/zend-stdlib": "^3.2.1",
+            "zendframework/zend-uri": "^2.5.2",
+            "zendframework/zend-validator": "^2.10.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.3",
+            "zendframework/zend-coding-standard": "~1.0.0",
+            "zendframework/zend-config": "^3.1 || ^2.6"
+        },
+        "suggest": {
+            "paragonie/certainty": "For automated management of cacert.pem"
+        },
+        "time": "2019-02-19T18:58:14+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.10.x-dev",
+                "dev-develop": "2.11.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Http\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Provides an easy interface for performing Hyper-Text Transfer Protocol (HTTP) requests",
+        "keywords": [
+            "ZendFramework",
+            "http",
+            "http client",
+            "zend",
+            "zf"
+        ]
+    },
+    {
         "name": "zendframework/zend-httphandlerrunner",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
@@ -3512,6 +3515,173 @@
             "expressive",
             "psr-15",
             "psr-7",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-loader",
+        "version": "2.6.0",
+        "version_normalized": "2.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-loader.git",
+            "reference": "78f11749ea340f6ca316bca5958eef80b38f9b6c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-loader/zipball/78f11749ea340f6ca316bca5958eef80b38f9b6c",
+            "reference": "78f11749ea340f6ca316bca5958eef80b38f9b6c",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.4",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2018-04-30T15:20:54+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.6.x-dev",
+                "dev-develop": "2.7.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Loader\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Autoloading and plugin loading strategies",
+        "keywords": [
+            "ZendFramework",
+            "loader",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-psr7bridge",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-psr7bridge.git",
+            "reference": "99c558f96be01d535fc9692250312342d76d4098"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-psr7bridge/zipball/99c558f96be01d535fc9692250312342d76d4098",
+            "reference": "99c558f96be01d535fc9692250312342d76d4098",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0",
+            "psr/http-message": "^1.0",
+            "zendframework/zend-diactoros": "^1.7 || ^2.0",
+            "zendframework/zend-http": "^2.7"
+        },
+        "conflict": {
+            "zendframework/zend-stdlib": "< 3.2.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.15 || ^6.5.6",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2018-12-20T16:48:40+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev",
+                "dev-develop": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Psr7Bridge\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "PSR-7 &lt;-&gt; zend-http message conversions",
+        "keywords": [
+            "ZendFramework",
+            "http",
+            "psr",
+            "psr-7",
+            "zend",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-router",
+        "version": "3.3.0",
+        "version_normalized": "3.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-router.git",
+            "reference": "b113a4cfd910ee4723079fa58a9bcf3198631620"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-router/zipball/b113a4cfd910ee4723079fa58a9bcf3198631620",
+            "reference": "b113a4cfd910ee4723079fa58a9bcf3198631620",
+            "shasum": ""
+        },
+        "require": {
+            "container-interop/container-interop": "^1.2",
+            "php": "^5.6 || ^7.0",
+            "zendframework/zend-http": "^2.8.1",
+            "zendframework/zend-servicemanager": "^2.7.8 || ^3.3",
+            "zendframework/zend-stdlib": "^3.2.1"
+        },
+        "conflict": {
+            "zendframework/zend-mvc": "<3.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.22 || ^6.4.1",
+            "zendframework/zend-coding-standard": "~1.0.0",
+            "zendframework/zend-i18n": "^2.7.4"
+        },
+        "suggest": {
+            "zendframework/zend-i18n": "^2.7.4, if defining translatable HTTP path segments"
+        },
+        "time": "2019-02-26T20:24:12+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3.x-dev",
+                "dev-develop": "4.0.x-dev"
+            },
+            "zf": {
+                "component": "Zend\\Router",
+                "config-provider": "Zend\\Router\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Router\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Flexible routing system for HTTP and console applications",
+        "keywords": [
+            "ZendFramework",
+            "mvc",
+            "routing",
+            "zend",
             "zf"
         ]
     },
@@ -3699,6 +3869,130 @@
             "psr-15",
             "psr-7",
             "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-uri",
+        "version": "2.7.0",
+        "version_normalized": "2.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-uri.git",
+            "reference": "b2785cd38fe379a784645449db86f21b7739b1ee"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-uri/zipball/b2785cd38fe379a784645449db86f21b7739b1ee",
+            "reference": "b2785cd38fe379a784645449db86f21b7739b1ee",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0",
+            "zendframework/zend-escaper": "^2.5",
+            "zendframework/zend-validator": "^2.10"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.4",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2019-02-27T21:39:04+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7.x-dev",
+                "dev-develop": "2.8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Uri\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "A component that aids in manipulating and validating » Uniform Resource Identifiers (URIs)",
+        "keywords": [
+            "ZendFramework",
+            "uri",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-validator",
+        "version": "2.12.0",
+        "version_normalized": "2.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-validator.git",
+            "reference": "64c33668e5fa2d39c6289a878f927ea2b0850c30"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/64c33668e5fa2d39c6289a878f927ea2b0850c30",
+            "reference": "64c33668e5fa2d39c6289a878f927ea2b0850c30",
+            "shasum": ""
+        },
+        "require": {
+            "container-interop/container-interop": "^1.1",
+            "php": "^5.6 || ^7.0",
+            "zendframework/zend-stdlib": "^3.2.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+            "psr/http-message": "^1.0",
+            "zendframework/zend-cache": "^2.6.1",
+            "zendframework/zend-coding-standard": "~1.0.0",
+            "zendframework/zend-config": "^2.6",
+            "zendframework/zend-db": "^2.7",
+            "zendframework/zend-filter": "^2.6",
+            "zendframework/zend-http": "^2.5.4",
+            "zendframework/zend-i18n": "^2.6",
+            "zendframework/zend-math": "^2.6",
+            "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
+            "zendframework/zend-session": "^2.8",
+            "zendframework/zend-uri": "^2.5"
+        },
+        "suggest": {
+            "psr/http-message": "psr/http-message, required when validating PSR-7 UploadedFileInterface instances via the Upload and UploadFile validators",
+            "zendframework/zend-db": "Zend\\Db component, required by the (No)RecordExists validator",
+            "zendframework/zend-filter": "Zend\\Filter component, required by the Digits validator",
+            "zendframework/zend-i18n": "Zend\\I18n component to allow translation of validation error messages",
+            "zendframework/zend-i18n-resources": "Translations of validator messages",
+            "zendframework/zend-math": "Zend\\Math component, required by the Csrf validator",
+            "zendframework/zend-servicemanager": "Zend\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
+            "zendframework/zend-session": "Zend\\Session component, ^2.8; required by the Csrf validator",
+            "zendframework/zend-uri": "Zend\\Uri component, required by the Uri and Sitemap\\Loc validators"
+        },
+        "time": "2019-01-30T14:26:10+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.12.x-dev",
+                "dev-develop": "2.13.x-dev"
+            },
+            "zf": {
+                "component": "Zend\\Validator",
+                "config-provider": "Zend\\Validator\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Validator\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "provides a set of commonly needed validators",
+        "homepage": "https://github.com/zendframework/zend-validator",
+        "keywords": [
+            "validator",
+            "zf2"
         ]
     },
     {

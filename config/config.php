@@ -13,10 +13,11 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
-    \User\ConfigProvider::class,
     \Zend\HttpHandlerRunner\ConfigProvider::class,
     \Zend\Expressive\Plates\ConfigProvider::class,
-    \Zend\Expressive\Router\FastRouteRouter\ConfigProvider::class,
+    \Zend\Expressive\Router\ZendRouter\ConfigProvider::class,
+    \Zend\Router\ConfigProvider::class,
+    \Zend\Validator\ConfigProvider::class,
     // Include cache configuration
     new ArrayProvider($cacheConfig),
 
