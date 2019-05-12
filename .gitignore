@@ -21,7 +21,7 @@ Thumbs.db
 !/logs/README.md
 
 #sublimeText
-/sftp-config.json
+sftp-config.json
 
 # Logs and databases #
 ######################

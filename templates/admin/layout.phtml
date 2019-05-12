@@ -102,7 +102,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- begin:: Header Mobile -->
 		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
 			<div class="kt-header-mobile__logo">
-				<a href="<?=$this->baseUrl()?>"><?php echo getenv('DB_NAME'); ?>
+				<a href="<?=$this->baseUrl()?>">
 					<img alt="Logo" src="<?=$this->asset('/assets/media/logos/logo-12.png')?>" />
 				</a>
 			</div>
@@ -1016,7 +1016,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
 									<span class="kt-subheader__breadcrumbs-separator"></span>
 									<a href="" class="kt-subheader__breadcrumbs-link">
-										Application </a>
+										<?php echo env('PHP_CREATOR', 'Rasmus Lerdorf'); ?> </a>
 
 									<!-- <span class="kt-subheader__breadcrumbs-link kt-subheader__breadcrumbs-link--active">Active link</span> -->
 								</div>
