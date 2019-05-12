@@ -1,0 +1,243 @@
+[2019-05-10 06:40:22] slim-app.INFO: Slim-Skeleton '/' route [] {"uid":"7a9cb50"}
+[2019-05-10 06:51:10] slim-app.INFO: Slim-Skeleton '/' route [] {"uid":"b111ae9"}
+[2019-05-10 06:51:14] slim-app.INFO: Slim-Skeleton '/' route [] {"uid":"961ad62"}
+[2019-05-10 06:56:43] slim-app.INFO: Slim-Skeleton '/' route [] {"uid":"7e93f53"}
+[2019-05-10 19:22:59] slim-app.INFO: Slim-Skeleton '/' route [] {"uid":"9182c4e"}
+[2019-05-10 19:24:24] slim-app.INFO: Admin Login '/' route [] {"uid":"ec5ef0e"}
+[2019-05-10 22:06:13] slim-app.INFO: Admin Login '/' route [] {"uid":"978c28f"}
+[2019-05-10 22:06:22] slim-app.INFO: Admin Login '/' route [] {"uid":"5d4b79d"}
+[2019-05-10 22:06:33] slim-app.INFO: Admin Login '/' route [] {"uid":"f7f5a59"}
+[2019-05-10 22:08:45] slim-app.INFO: Admin Login '/' route [] {"uid":"452f4c3"}
+[2019-05-10 22:08:50] slim-app.INFO: Admin Login '/' route [] {"uid":"e567ba7"}
+[2019-05-10 22:10:01] slim-app.INFO: Admin Login '/' route [] {"uid":"075f9c1"}
+[2019-05-10 22:10:23] slim-app.INFO: Admin Login '/' route [] {"uid":"6acc23c"}
+[2019-05-10 22:10:26] slim-app.INFO: Admin Login '/' route [] {"uid":"1cfbc89"}
+[2019-05-10 22:10:30] slim-app.INFO: Admin Login '/' route [] {"uid":"972be22"}
+[2019-05-10 22:10:38] slim-app.INFO: Admin Login '/' route [] {"uid":"6802663"}
+[2019-05-10 22:10:44] slim-app.INFO: Admin Login '/' route [] {"uid":"3368d7f"}
+[2019-05-10 22:11:03] slim-app.INFO: Admin Login '/' route [] {"uid":"9d60424"}
+[2019-05-10 22:11:03] slim-app.INFO: Admin Login '/' route [] {"uid":"cc20fbf"}
+[2019-05-10 22:11:08] slim-app.INFO: Admin Login '/' route [] {"uid":"7d31177"}
+[2019-05-10 22:11:09] slim-app.INFO: Admin Login '/' route [] {"uid":"f2bcc52"}
+[2019-05-10 22:11:56] slim-app.INFO: Admin Login '/' route [] {"uid":"33a9ed6"}
+[2019-05-10 22:11:56] slim-app.INFO: Admin Login '/' route [] {"uid":"0cd4efa"}
+[2019-05-10 22:12:00] slim-app.INFO: Admin Login '/' route [] {"uid":"439201c"}
+[2019-05-10 22:12:01] slim-app.INFO: Admin Login '/' route [] {"uid":"a14913d"}
+[2019-05-10 22:12:40] slim-app.INFO: Admin Login '/' route [] {"uid":"1072af5"}
+[2019-05-10 22:16:31] slim-app.INFO: Admin Login '/' route [] {"uid":"d765b1c"}
+[2019-05-10 22:16:47] slim-app.INFO: Admin Login '/' route [] {"uid":"8c5b5c4"}
+[2019-05-10 22:20:51] slim-app.INFO: Admin Login '/' route [] {"uid":"a777142"}
+[2019-05-10 22:21:11] slim-app.INFO: Admin Login '/' route [] {"uid":"a2d1bcd"}
+[2019-05-10 22:30:01] slim-app.INFO: Admin Login '/' route [] {"uid":"383f0bf"}
+[2019-05-10 22:42:16] slim-app.INFO: Admin Login '/' route [] {"uid":"64a44f7"}
+[2019-05-10 23:12:05] slim-app.INFO: Admin Login '/' route [] {"uid":"4c2c642"}
+[2019-05-10 23:12:14] slim-app.INFO: Admin Login '/' route [] {"uid":"245ec4c"}
+[2019-05-10 23:12:38] slim-app.INFO: Admin Login '/' route [] {"uid":"1e00a1d"}
+[2019-05-10 23:12:40] slim-app.INFO: Admin Login '/' route [] {"uid":"cf33efe"}
+[2019-05-10 23:12:41] slim-app.INFO: Admin Login '/' route [] {"uid":"5f4ee3a"}
+[2019-05-10 23:13:20] slim-app.INFO: Admin Login '/' route [] {"uid":"8ea85d1"}
+[2019-05-10 23:13:27] slim-app.INFO: Admin Login '/' route [] {"uid":"5b09603"}
+[2019-05-10 23:13:43] slim-app.INFO: Admin Login '/' route [] {"uid":"2890fb9"}
+[2019-05-10 23:13:45] slim-app.INFO: Admin Login '/' route [] {"uid":"33317c9"}
+[2019-05-10 23:13:46] slim-app.INFO: Admin Login '/' route [] {"uid":"cbe8379"}
+[2019-05-10 23:13:54] slim-app.INFO: Admin Login '/' route [] {"uid":"93ae04b"}
+[2019-05-10 23:14:01] slim-app.INFO: Admin Login '/' route [] {"uid":"4bed813"}
+[2019-05-10 23:14:17] slim-app.INFO: Admin Login '/' route [] {"uid":"0ffdeb7"}
+[2019-05-10 23:14:21] slim-app.INFO: Admin Login '/' route [] {"uid":"ae42738"}
+[2019-05-10 23:14:21] slim-app.INFO: Admin Login '/' route [] {"uid":"01dfcff"}
+[2019-05-10 23:42:38] slim-app.INFO: Admin Login '/' route [] {"uid":"7093439"}
+[2019-05-11 00:02:20] slim-app.INFO: Admin Login '/' route [] {"uid":"e6918ba"}
+[2019-05-11 00:34:59] slim-app.INFO: Admin Login '/' route [] {"uid":"c68e209"}
+[2019-05-11 00:39:38] slim-app.INFO: Admin Login '/' route [] {"uid":"fcf08e0"}
+[2019-05-11 00:42:15] slim-app.INFO: Admin Login '/' route [] {"uid":"4af461f"}
+[2019-05-11 00:42:31] slim-app.INFO: Admin Login '/' route [] {"uid":"36500f0"}
+[2019-05-11 01:05:14] slim-app.INFO: Admin Login '/' route [] {"uid":"368f00e"}
+[2019-05-11 01:18:06] mManager POS.INFO: Admin Login '/' route [] {"uid":"188bd69"}
+[2019-05-11 01:19:31] mManager POS.INFO: Admin Login '/' route [] {"uid":"888daf3"}
+[2019-05-11 01:38:50] mManager POS.INFO: Admin Login '/' route [] {"uid":"65d6c73"}
+[2019-05-11 01:42:36] mManager POS.INFO: Admin Login '/' route [] {"uid":"52f912a"}
+[2019-05-11 01:43:16] mManager POS.INFO: Admin Login '/' route [] {"uid":"d867532"}
+[2019-05-11 01:43:41] mManager POS.INFO: Admin Login '/' route [] {"uid":"bc5b22b"}
+[2019-05-11 01:50:43] mManager POS.INFO: Admin Login '/' route [] {"uid":"91c1152"}
+[2019-05-11 01:51:00] mManager POS.INFO: Admin Login '/' route [] {"uid":"9ac1212"}
+[2019-05-11 02:04:15] mManager POS.INFO: Admin Login '/' route [] {"uid":"7e57c74"}
+[2019-05-11 02:05:02] mManager POS.INFO: Admin Login '/' route [] {"uid":"ad26b3d"}
+[2019-05-11 02:51:13] mManager POS.INFO: Admin Login '/' route [] {"uid":"18474ce"}
+[2019-05-11 08:21:36] mManager POS.INFO: Admin Login '/' route [] {"uid":"bb9121d"}
+[2019-05-11 11:18:42] mManager POS.INFO: Admin Login '/' route [] {"uid":"d6540a0"}
+[2019-05-11 11:30:34] mManager POS.INFO: Admin Login '/' route [] {"uid":"93c9ff7"}
+[2019-05-11 11:57:12] mManager POS.INFO: Admin Login '/' route [] {"uid":"bbd3b31"}
+[2019-05-11 11:57:53] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e0ecc85"}
+[2019-05-11 12:00:32] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"cd76a5d"}
+[2019-05-11 12:03:43] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"787e41f"}
+[2019-05-11 12:36:17] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"1b2f39d"}
+[2019-05-11 12:37:56] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"3a26040"}
+[2019-05-11 12:56:46] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"019a76f"}
+[2019-05-11 15:03:16] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"61d6c09"}
+[2019-05-11 15:10:17] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"555839a"}
+[2019-05-11 15:39:12] false.INFO: Admin Accces Login '/' route [] {"uid":"0dfa994"}
+[2019-05-11 15:50:02] false.INFO: Admin Accces Login '/' route [] {"uid":"58eb110"}
+[2019-05-11 15:51:52] false.INFO: Admin Accces Login '/' route [] {"uid":"b68640e"}
+[2019-05-11 15:51:56] false.INFO: Admin Accces Login '/' route [] {"uid":"2f83c05"}
+[2019-05-11 15:54:14] false.INFO: Admin Accces Login '/' route [] {"uid":"f3013b4"}
+[2019-05-11 15:54:22] false.INFO: Admin Accces Login '/' route [] {"uid":"872a494"}
+[2019-05-11 15:54:54] false.INFO: Admin Accces Login '/' route [] {"uid":"725cddb"}
+[2019-05-11 15:55:06] false.INFO: Admin Accces Login '/' route [] {"uid":"0e3b532"}
+[2019-05-11 16:08:04] false.INFO: Admin Accces Login '/' route [] {"uid":"dbbf0fa"}
+[2019-05-11 16:18:05] false.INFO: Admin Accces Login '/' route [] {"uid":"6fd764b"}
+[2019-05-11 16:18:36] false.INFO: Admin Accces Login '/' route [] {"uid":"1d90238"}
+[2019-05-11 16:19:48] false.INFO: Admin Accces Login '/' route [] {"uid":"824137c"}
+[2019-05-11 16:21:46] false.INFO: Admin Accces Login '/' route [] {"uid":"16bfb7b"}
+[2019-05-11 16:22:55] false.INFO: Admin Accces Login '/' route [] {"uid":"45b9e04"}
+[2019-05-11 16:30:24] false.INFO: Admin Accces Login '/' route [] {"uid":"806d953"}
+[2019-05-11 16:34:56] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"1efc603"}
+[2019-05-11 17:55:24] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"ec71e50"}
+[2019-05-11 17:58:18] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"c7ba238"}
+[2019-05-11 18:13:04] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"c052c21"}
+[2019-05-11 18:24:25] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"af2a4d2"}
+[2019-05-11 18:38:05] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"061d275"}
+[2019-05-11 18:38:38] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"583d23b"}
+[2019-05-11 18:38:54] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"9d33efb"}
+[2019-05-11 18:39:11] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"feb1df0"}
+[2019-05-11 18:39:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"c7a93aa"}
+[2019-05-11 18:39:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"91d9bbc"}
+[2019-05-11 18:39:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"2c01d37"}
+[2019-05-11 18:39:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e11a745"}
+[2019-05-11 18:39:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"a2b463c"}
+[2019-05-11 18:39:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"3c472a5"}
+[2019-05-11 18:40:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"aa018ae"}
+[2019-05-11 18:41:18] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e39766b"}
+[2019-05-11 18:41:54] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"536382a"}
+[2019-05-11 18:41:56] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"94fb11b"}
+[2019-05-11 18:41:57] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"b33a92a"}
+[2019-05-11 18:41:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e9fbfe9"}
+[2019-05-11 18:41:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"2eb56a1"}
+[2019-05-11 18:41:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e126aa0"}
+[2019-05-11 18:41:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"5a62cce"}
+[2019-05-11 18:41:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"76e43a9"}
+[2019-05-11 18:41:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"3cf5d71"}
+[2019-05-11 18:41:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"86ad3dd"}
+[2019-05-11 18:41:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"6642a8a"}
+[2019-05-11 18:42:23] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"f9a9037"}
+[2019-05-11 18:42:24] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"bfd42b5"}
+[2019-05-11 18:43:29] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"acb1eb8"}
+[2019-05-11 18:46:02] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"78f852e"}
+[2019-05-11 18:46:04] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e5010fc"}
+[2019-05-11 18:46:17] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"912291c"}
+[2019-05-11 18:47:10] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"8d8eadc"}
+[2019-05-11 18:47:11] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"2fa7fd1"}
+[2019-05-11 18:48:06] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"57396be"}
+[2019-05-11 18:48:08] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"4341a2c"}
+[2019-05-11 18:52:40] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"3ff6f54"}
+[2019-05-11 18:54:44] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"3ec4538"}
+[2019-05-11 18:54:46] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"bc43fc0"}
+[2019-05-11 18:55:43] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"5caf8f8"}
+[2019-05-11 18:56:07] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"f254d9a"}
+[2019-05-11 18:56:26] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"5b15a5e"}
+[2019-05-11 18:57:03] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e0c76a8"}
+[2019-05-11 18:57:14] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"d376396"}
+[2019-05-11 18:57:22] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"350f4a2"}
+[2019-05-11 18:58:01] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"7246157"}
+[2019-05-11 18:58:04] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"aeb1cdf"}
+[2019-05-11 19:00:11] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"465da78"}
+[2019-05-11 19:01:23] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"6f03665"}
+[2019-05-11 19:02:04] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"ce199a7"}
+[2019-05-11 19:02:25] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"a6810fa"}
+[2019-05-11 19:02:47] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"06adc25"}
+[2019-05-11 19:07:33] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"d117469"}
+[2019-05-11 19:08:08] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"ea2dd26"}
+[2019-05-11 19:08:11] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"6f72b6b"}
+[2019-05-11 19:10:06] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"dc861a2"}
+[2019-05-11 19:12:33] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"f52c7d1"}
+[2019-05-11 19:12:35] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"538c7d6"}
+[2019-05-11 19:16:29] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"89338df"}
+[2019-05-11 19:25:15] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"f6bb3a2"}
+[2019-05-11 19:25:16] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"dffb75c"}
+[2019-05-11 19:29:52] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"b57ca5d"}
+[2019-05-11 19:31:41] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"1bfa416"}
+[2019-05-11 19:32:19] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"dad14bb"}
+[2019-05-11 19:43:58] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e6e32c4"}
+[2019-05-11 19:46:27] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"872f06c"}
+[2019-05-11 19:47:11] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e92574a"}
+[2019-05-11 19:47:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"8ea177c"}
+[2019-05-11 19:49:41] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"83f9a69"}
+[2019-05-11 19:50:34] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"945a64d"}
+[2019-05-11 20:12:23] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"43dd2cf"}
+[2019-05-11 20:13:25] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"e4e2775"}
+[2019-05-11 20:32:02] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"42d1744"}
+[2019-05-11 20:34:06] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"433410e"}
+[2019-05-11 20:34:10] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"0853508"}
+[2019-05-11 20:34:13] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"c1eff4d"}
+[2019-05-11 20:34:29] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"b850fbd"}
+[2019-05-11 20:34:36] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"53a788b"}
+[2019-05-11 20:37:39] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"2c9a4ab"}
+[2019-05-11 20:59:32] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"7c91d84"}
+[2019-05-11 20:59:35] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"5a609e5"}
+[2019-05-11 21:00:27] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"92baf5c"}
+[2019-05-11 21:03:08] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"2a80e6a"}
+[2019-05-11 21:10:05] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"d55a5d8"}
+[2019-05-11 21:19:49] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"0141218"}
+[2019-05-11 21:21:32] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"3938cb7"}
+[2019-05-11 21:32:12] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"92245af"}
+[2019-05-11 21:32:35] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"8300cde"}
+[2019-05-11 22:41:36] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"8ef062e"}
+[2019-05-11 22:41:43] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"d09e35a"}
+[2019-05-11 23:16:51] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"7bc5e6a"}
+[2019-05-11 23:52:13] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"649620c"}
+[2019-05-11 23:52:17] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"61cfd8b"}
+[2019-05-12 00:09:42] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"fa7a429"}
+[2019-05-12 01:01:20] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"d2e7b46"}
+[2019-05-12 01:06:55] false.INFO: Admin Accces Login '/' route [] {"uid":"4a61aec"}
+[2019-05-12 01:11:56] false.INFO: Admin Accces Login '/' route [] {"uid":"a015f73"}
+[2019-05-12 01:15:31] false.INFO: Admin Accces Login '/' route [] {"uid":"e95b5eb"}
+[2019-05-12 01:17:13] false.INFO: Admin Accces Login '/' route [] {"uid":"d764eea"}
+[2019-05-12 01:18:11] false.INFO: Admin Accces Login '/' route [] {"uid":"79e8fe2"}
+[2019-05-12 01:18:12] false.INFO: Admin Accces Login '/' route [] {"uid":"91d3b75"}
+[2019-05-12 01:27:25] false.INFO: Admin Accces Login '/' route [] {"uid":"d5c5967"}
+[2019-05-12 01:28:11] false.INFO: Admin Accces Login '/' route [] {"uid":"0a83c54"}
+[2019-05-12 01:29:20] false.INFO: Admin Accces Login '/' route [] {"uid":"1816f88"}
+[2019-05-12 01:30:32] false.INFO: Admin Accces Login '/' route [] {"uid":"3bb9aa7"}
+[2019-05-12 01:32:53] false.INFO: Admin Accces Login '/' route [] {"uid":"0f9f1a8"}
+[2019-05-12 01:34:35] false.INFO: Admin Accces Login '/' route [] {"uid":"18f219d"}
+[2019-05-12 01:37:10] NULL.INFO: Admin Accces Login '/' route [] {"uid":"be2268e"}
+[2019-05-12 01:42:55] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"c87e19e"}
+[2019-05-12 01:48:47] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"17f4df6"}
+[2019-05-12 01:49:48] NULL.INFO: Admin Accces Login '/' route [] {"uid":"4522bd4"}
+[2019-05-12 01:51:59] NULL.INFO: Admin Accces Login '/' route [] {"uid":"8866ba0"}
+[2019-05-12 02:08:40] false.INFO: Admin Accces Login '/' route [] {"uid":"5a43a9c"}
+[2019-05-12 02:11:45] false.INFO: Admin Accces Login '/' route [] {"uid":"4543f75"}
+[2019-05-12 02:12:18] false.INFO: Admin Accces Login '/' route [] {"uid":"68cbc84"}
+[2019-05-12 02:17:17] false.INFO: Admin Accces Login '/' route [] {"uid":"2ab1fdb"}
+[2019-05-12 02:17:29] false.INFO: Admin Accces Login '/' route [] {"uid":"4d47642"}
+[2019-05-12 02:18:34] false.INFO: Admin Accces Login '/' route [] {"uid":"4851e6a"}
+[2019-05-12 02:20:09] false.INFO: Admin Accces Login '/' route [] {"uid":"61bcd56"}
+[2019-05-12 02:21:39] false.INFO: Admin Accces Login '/' route [] {"uid":"1f5166d"}
+[2019-05-12 09:41:37] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"edd8689"}
+[2019-05-12 10:38:37] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"4239c04"}
+[2019-05-12 10:38:47] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"314c207"}
+[2019-05-12 10:43:54] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"ae18e11"}
+[2019-05-12 10:43:57] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"f5187ab"}
+[2019-05-12 10:45:12] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"05485bf"}
+[2019-05-12 10:45:19] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"c1d4dfb"}
+[2019-05-12 10:45:42] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"ee060c2"}
+[2019-05-12 13:11:42] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"fa08e06"}
+[2019-05-12 13:12:49] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"b1f740e"}
+[2019-05-12 13:12:52] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"c114d2a"}
+[2019-05-12 13:13:09] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"d24a426"}
+[2019-05-12 13:13:34] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"998a534"}
+[2019-05-12 13:13:38] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"d169532"}
+[2019-05-12 13:14:27] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"29721c2"}
+[2019-05-12 13:14:35] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"845a654"}
+[2019-05-12 13:14:59] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"32232dd"}
+[2019-05-12 13:15:02] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"455d613"}
+[2019-05-12 13:15:34] mManager POS.INFO: Admin Accces Login '/' route [] {"uid":"a7e9e36"}
+[2019-05-12 13:26:47] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"bbc5792"}
+[2019-05-12 13:28:17] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"bedfb1e"}
+[2019-05-12 13:30:20] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"00200e8"}
+[2019-05-12 13:37:32] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"4a789cc"}
+[2019-05-12 13:39:23] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"117c2d2"}
+[2019-05-12 13:44:20] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"8164039"}
+[2019-05-12 13:50:19] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"e8b0eac"}
+[2019-05-12 13:51:46] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"d558a46"}
+[2019-05-12 14:02:41] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"a7bc6a5"}
+[2019-05-12 14:02:45] m'Manager POS.INFO: Admin Accces Login '/' route [] {"uid":"0186236"}
