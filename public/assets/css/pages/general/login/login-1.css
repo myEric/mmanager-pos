@@ -49,7 +49,7 @@
     .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__head .kt-login__signup-label {
       color: #a7abc3; }
     .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__head .kt-login__signup-link {
-      color: #5d78ff; }
+      color: #2c77f4; }
   .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,9 +105,9 @@
         .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__body .kt-login__form .kt-login__actions .kt-login__link-forgot {
           color: #a7abc3; }
           .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__body .kt-login__form .kt-login__actions .kt-login__link-forgot:hover {
-            color: #5d78ff; }
+            color: #2c77f4; }
             .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__body .kt-login__form .kt-login__actions .kt-login__link-forgot:hover:after {
-              border-bottom: 1px solid #5d78ff;
+              border-bottom: 1px solid #2c77f4;
               opacity: 0.3; }
         .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__body .kt-login__form .kt-login__actions .kt-login__btn-secondary,
         .kt-login.kt-login--v1 .kt-login__wrapper .kt-login__body .kt-login__form .kt-login__actions .kt-login__btn-primary {

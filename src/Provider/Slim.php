@@ -4,15 +4,16 @@ declare(strict_types=1);
 
 namespace MmanagerPOS\Provider;
 
+use MmanagerPOS\Domain\User\UserSession;
 use MmanagerPOS\Domain\User\CreateUser;
 use MmanagerPOS\Domain\User\ListUsers;
 use Pimple\ServiceProviderInterface;
-use Psr\Log\LoggerInterface;
 use Doctrine\ORM\EntityManager;
 use Pimple\Container;
 use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
+use MmanagerPOS\Middleware\Auth;
 
 /**
  * A ServiceProvider for registering services related
@@ -36,29 +37,58 @@ class Slim implements ServiceProviderInterface
                 Faker\Factory::create()
             );
         };
-        $cnt['logger'] = function (Container $cnt): LoggerInterface {
-            $settings = $cnt['settings']['logger'];
-            $logger = new \Monolog\Logger($settings['name']);
-            $logger->pushProcessor(new \Monolog\Processor\UidProcessor());
-            $logger->pushHandler(new \Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
-            return $logger;
-        };
-        $cnt['renderer'] = function ($cnt) {
-            $settings = $cnt['settings']['renderer'];
-            return new \Slim\Views\PhpRenderer($settings['template_path']);
-        };
 
         $cnt[App::class] = function (Container $cnt): App {
+
             $app = new App($cnt);
+            $app->add(new \Slim\Middleware\Session([
+              'name' => 'mmanager_pos_session',
+              'autorefresh' => true,
+              'lifetime' => '1 day'
+            ]));
 
-            $app->get('/hello', ListUsers::class);
-            $app->get('/users', ListUsers::class);
-            $app->post('/users', CreateUser::class);
+            $app->get('/user/login', function (Request $request, Response $response, array $args) use ($cnt) {
+                return $this->view->render('user::login');
+            })->setName('user-login');
 
-            $app->get('/', function (Request $request, Response $response, array $args) use ($cnt) {
-                $cnt->get('logger')->info("Admin Accces Login '/' route");
-                return $this->view->render('admin::index');
-            })->setName('admin-dashboard');
+            //Handle authentication with post data
+            $app->get('/user/auth', function (Request $request, Response $response, array $args) use ($cnt) {
+                $params = $request->getQueryParams();
+                if ($params) {
+                    $username = $params['username'];
+                    $password = $params['password'];
+
+                    $session = new UserSession('login', $username, $password);
+
+                    if ($session->isUserLoggedIn()) {
+                        return $response->withJson(array('success' => true), 200);
+                    } else {
+                        return $response->withJson(array('success' => false));
+                    }
+                } else {
+                    return $response->withJson(array('success' => false));
+                }
+            })->setName('user-auth');
+
+            // Handles User logout
+            $app->get('/user/logout', function (Request $request, Response $response, array $args) use ($cnt) {
+                $session = new UserSession('logout');
+                return $response->withRedirect('/');
+            })->setName('user-logout');
+
+            $app->get('/client/login', function (Request $request, Response $response, array $args) use ($cnt) {
+                return $this->view->render('client::login');
+            })->setName('client-login');
+            $app->get('/provider/login', function (Request $request, Response $response, array $args) use ($cnt) {
+                return $this->view->render('provider::login');
+            })->setName('provider-login');
+
+            $app->group('', function(App $app) {
+                $app->get('/', function (Request $request, Response $response, array $args) use ($cnt) {
+                    $this->view->addData(['username' => $this->session->user_name]);
+                    return $this->view->render('admin::index');
+                })->setName('admin-index');
+            })->add(new \MmanagerPOS\Middleware\Auth($app->getContainer()->get('router')));
 
             return $app;
         };

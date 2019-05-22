@@ -1,5 +1,104 @@
 [
     {
+        "name": "aura/intl",
+        "version": "3.0.0",
+        "version_normalized": "3.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/auraphp/Aura.Intl.git",
+            "reference": "7fce228980b19bf4dee2d7bbd6202a69b0dde926"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/auraphp/Aura.Intl/zipball/7fce228980b19bf4dee2d7bbd6202a69b0dde926",
+            "reference": "7fce228980b19bf4dee2d7bbd6202a69b0dde926",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6|^7.0"
+        },
+        "time": "2017-01-20T05:00:11+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Aura\\Intl\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aura.Intl Contributors",
+                "homepage": "https://github.com/auraphp/Aura.Intl/contributors"
+            }
+        ],
+        "description": "The Aura Intl package provides internationalization tools, specifically message translation.",
+        "homepage": "https://github.com/auraphp/Aura.Intl",
+        "keywords": [
+            "g11n",
+            "globalization",
+            "i18n",
+            "internationalization",
+            "intl",
+            "l10n",
+            "localization"
+        ]
+    },
+    {
+        "name": "bryanjhv/slim-session",
+        "version": "3.6.1",
+        "version_normalized": "3.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bryanjhv/slim-session.git",
+            "reference": "0205470a35c716823ededae04d84a7f27fba400a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bryanjhv/slim-session/zipball/0205470a35c716823ededae04d84a7f27fba400a",
+            "reference": "0205470a35c716823ededae04d84a7f27fba400a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5",
+            "slim/slim": "^3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7.0"
+        },
+        "time": "2018-07-22T23:41:31+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bryan Horna",
+                "email": "bryanjhv@gmail.com",
+                "homepage": "https://bryanjhv.github.io",
+                "role": "developer"
+            }
+        ],
+        "description": "Session middleware and helper for Slim framework 3.",
+        "homepage": "https://github.com/bryanjhv/slim-session",
+        "keywords": [
+            "helper",
+            "middleware",
+            "session",
+            "slim"
+        ]
+    },
+    {
         "name": "container-interop/container-interop",
         "version": "1.2.0",
         "version_normalized": "1.2.0.0",
@@ -923,6 +1022,133 @@
         ]
     },
     {
+        "name": "gettext/gettext",
+        "version": "v4.6.2",
+        "version_normalized": "4.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/oscarotero/Gettext.git",
+            "reference": "93176b272d61fb58a9767be71c50d19149cb1e48"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/oscarotero/Gettext/zipball/93176b272d61fb58a9767be71c50d19149cb1e48",
+            "reference": "93176b272d61fb58a9767be71c50d19149cb1e48",
+            "shasum": ""
+        },
+        "require": {
+            "gettext/languages": "^2.3",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "illuminate/view": "*",
+            "phpunit/phpunit": "^4.8|^5.7|^6.5",
+            "squizlabs/php_codesniffer": "^3.0",
+            "symfony/yaml": "~2",
+            "twig/extensions": "*",
+            "twig/twig": "^1.31|^2.0"
+        },
+        "suggest": {
+            "illuminate/view": "Is necessary if you want to use the Blade extractor",
+            "symfony/yaml": "Is necessary if you want to use the Yaml extractor/generator",
+            "twig/extensions": "Is necessary if you want to use the Twig extractor",
+            "twig/twig": "Is necessary if you want to use the Twig extractor"
+        },
+        "time": "2019-01-12T18:40:56+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Gettext\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Oscar Otero",
+                "email": "oom@oscarotero.com",
+                "homepage": "http://oscarotero.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP gettext manager",
+        "homepage": "https://github.com/oscarotero/Gettext",
+        "keywords": [
+            "JS",
+            "gettext",
+            "i18n",
+            "mo",
+            "po",
+            "translation"
+        ]
+    },
+    {
+        "name": "gettext/languages",
+        "version": "2.5.0",
+        "version_normalized": "2.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mlocati/cldr-to-gettext-plural-rules.git",
+            "reference": "78db2d17933f0765a102f368a6663f057162ddbd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mlocati/cldr-to-gettext-plural-rules/zipball/78db2d17933f0765a102f368a6663f057162ddbd",
+            "reference": "78db2d17933f0765a102f368a6663f057162ddbd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4"
+        },
+        "time": "2018-11-13T22:06:07+00:00",
+        "bin": [
+            "bin/export-plural-rules",
+            "bin/export-plural-rules.php"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Gettext\\Languages\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michele Locati",
+                "email": "mlocati@gmail.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "gettext languages with plural rules",
+        "homepage": "https://github.com/mlocati/cldr-to-gettext-plural-rules",
+        "keywords": [
+            "cldr",
+            "i18n",
+            "internationalization",
+            "l10n",
+            "language",
+            "languages",
+            "localization",
+            "php",
+            "plural",
+            "plural rules",
+            "plurals",
+            "translate",
+            "translations",
+            "unicode"
+        ]
+    },
+    {
         "name": "league/plates",
         "version": "3.3.0",
         "version_normalized": "3.3.0.0",
@@ -1155,6 +1381,55 @@
         "keywords": [
             "router",
             "routing"
+        ]
+    },
+    {
+        "name": "owasp/phprbac",
+        "version": "2.0.x-dev",
+        "version_normalized": "2.0.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/OWASP/rbac.git",
+            "reference": "82ba74cf823a8c5a9225a56d51f58f9f60b20c54"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/OWASP/rbac/zipball/82ba74cf823a8c5a9225a56d51f58f9f60b20c54",
+            "reference": "82ba74cf823a8c5a9225a56d51f58f9f60b20c54",
+            "shasum": ""
+        },
+        "time": "2014-03-14T13:16:56+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "PhpRbac": "PhpRbac/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "CC-BY-SA-3.0"
+        ],
+        "authors": [
+            {
+                "name": "AbiusX",
+                "email": "me@abiusx.com",
+                "homepage": "http://abiusx.com/",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Jesse Burns",
+                "email": "jesse.burns@alliancecms.com",
+                "homepage": "http://www.jbwebware.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP-RBAC is the de-facto authorization library for PHP. It provides developers with NIST Level 2 Standard Role Based Access Control and more, in the fastest implementation yet.",
+        "homepage": "http://phprbac.net/",
+        "keywords": [
+            "owasp",
+            "rbac",
+            "security"
         ]
     },
     {
@@ -1802,17 +2077,17 @@
     },
     {
         "name": "phpunit/phpunit",
-        "version": "7.5.10",
-        "version_normalized": "7.5.10.0",
+        "version": "7.5.11",
+        "version_normalized": "7.5.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "d7d9cee051d03ed98df6023aad93f7902731a780"
+            "reference": "64cb33f5b520da490a7b13149d39b43cf3c890c6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d7d9cee051d03ed98df6023aad93f7902731a780",
-            "reference": "d7d9cee051d03ed98df6023aad93f7902731a780",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/64cb33f5b520da490a7b13149d39b43cf3c890c6",
+            "reference": "64cb33f5b520da490a7b13149d39b43cf3c890c6",
             "shasum": ""
         },
         "require": {
@@ -1851,7 +2126,7 @@
             "ext-xdebug": "*",
             "phpunit/php-invoker": "^2.0"
         },
-        "time": "2019-05-09T05:06:47+00:00",
+        "time": "2019-05-14T04:53:02+00:00",
         "bin": [
             "phpunit"
         ],

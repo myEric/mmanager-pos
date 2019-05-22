@@ -1,11 +1,14 @@
 <?php
 
-define('APP_ROOT', __DIR__);
+// Define root path
+defined('DS') ?: define('DS', DIRECTORY_SEPARATOR);
+defined('APP_ROOT') ?: define('APP_ROOT', __DIR__. DS);
 
 return [
     'settings' => [
         'displayErrorDetails' => true, // set to false in production
         'addContentLengthHeader' => false, // Allow the web server to send the content-length header
+        'determineRouteBeforeAppMiddleware' =>true,
 
         // App Settings
         'app'                    => [
@@ -22,10 +25,10 @@ return [
 
             // path where the compiled metadata info will be cached
             // make sure the path exists and it is writable
-            'cache_dir' => APP_ROOT . '/var/doctrine',
+            'cache_dir' => APP_ROOT . 'var/doctrine',
 
             // you should add any other path containing annotated entity classes
-            'metadata_dirs' => [APP_ROOT . '/src/Domain'],
+            'metadata_dirs' => [APP_ROOT . 'src/Domain'],
 
             'connection' => [
                 'host'      => getenv('DB_HOST'),
@@ -54,7 +57,13 @@ return [
             // Template extension (default: false) see: http://platesphp.com/extensions/asset/
             'timestampInFilename' => false,
             'adminPath' => __DIR__ . '/../templates/admin/',
+            'userPath' => __DIR__ . '/../templates/user/',
             'emailPath' => __DIR__ . '/../templates/emails/',
+        ],
+        // Locale settings
+        'locale' => [
+            // Path to view directory (default: null)
+            'directory' => __DIR__ . '/../resources/lang/',
         ],
         // Monolog settings
         'logger' => [

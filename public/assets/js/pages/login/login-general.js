@@ -68,43 +68,6 @@ var KTLoginGeneral = function() {
         });
     }
 
-    var handleSignInFormSubmit = function() {
-        $('#kt_login_signin_submit').click(function(e) {
-            e.preventDefault();
-            var btn = $(this);
-            var form = $(this).closest('form');           
-
-            form.validate({
-                rules: {
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    password: {
-                        required: true
-                    }
-                }
-            });
-
-            if (!form.valid()) {
-                return;
-            }
-
-            btn.addClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', true);
-
-            form.ajaxSubmit({
-                url: '',
-                success: function(response, status, xhr, $form) {
-                	// similate 2s delay
-                	setTimeout(function() {
-	                    btn.removeClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', false);
-	                    showErrorMsg(form, 'danger', 'Incorrect username or password. Please try again.');
-                    }, 2000);
-                }
-            });
-        });
-    }
-
     var handleSignUpFormSubmit = function() {
         $('#kt_login_signup_submit').click(function(e) {
             e.preventDefault();
@@ -170,9 +133,8 @@ var KTLoginGeneral = function() {
 
             form.validate({
                 rules: {
-                    email: {
-                        required: true,
-                        email: true
+                    username: {
+                        required: true
                     }
                 }
             });
@@ -210,7 +172,6 @@ var KTLoginGeneral = function() {
         // public functions
         init: function() {
             handleFormSwitch();
-            handleSignInFormSubmit();
             handleSignUpFormSubmit();
             handleForgotFormSubmit();
         }

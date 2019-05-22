@@ -9,8 +9,10 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'eff3b3fdf53c921071ab1748ebed7511' => __DIR__ . '/../..' . '/helpers/translate_string.php',
+        'ebb394066de0d32e6487dfb69dd73756' => __DIR__ . '/../..' . '/helpers/password_compatibility_library.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -55,6 +57,11 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         array (
             'Interop\\Container\\' => 18,
         ),
+        'G' => 
+        array (
+            'Gettext\\Languages\\' => 18,
+            'Gettext\\' => 8,
+        ),
         'F' => 
         array (
             'FastRoute\\' => 10,
@@ -71,6 +78,10 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'Aura\\Intl\\' => 10,
         ),
     );
 
@@ -145,6 +156,14 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
+        'Gettext\\Languages\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gettext/languages/src',
+        ),
+        'Gettext\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gettext/gettext/src',
+        ),
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
@@ -192,6 +211,14 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Aura\\Intl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/intl/src',
+        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/bryanjhv/slim-session/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -204,6 +231,10 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
             'Pimple' => 
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
+            ),
+            'PhpRbac' => 
+            array (
+                0 => __DIR__ . '/..' . '/owasp/phprbac/PhpRbac/src',
             ),
             'PhpOption\\' => 
             array (
@@ -220,6 +251,24 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
     );
 
     public static $classMap = array (
+        'Aura\\Intl\\BasicFormatter' => __DIR__ . '/..' . '/aura/intl/src/BasicFormatter.php',
+        'Aura\\Intl\\Exception' => __DIR__ . '/..' . '/aura/intl/src/Exception.php',
+        'Aura\\Intl\\Exception\\CannotFormat' => __DIR__ . '/..' . '/aura/intl/src/Exception/CannotFormat.php',
+        'Aura\\Intl\\Exception\\CannotInstantiateFormatter' => __DIR__ . '/..' . '/aura/intl/src/Exception/CannotInstantiateFormatter.php',
+        'Aura\\Intl\\Exception\\FormatterNotMapped' => __DIR__ . '/..' . '/aura/intl/src/Exception/FormatterNotMapped.php',
+        'Aura\\Intl\\Exception\\IcuVersionTooLow' => __DIR__ . '/..' . '/aura/intl/src/Exception/IcuVersionTooLow.php',
+        'Aura\\Intl\\FormatterInterface' => __DIR__ . '/..' . '/aura/intl/src/FormatterInterface.php',
+        'Aura\\Intl\\FormatterLocator' => __DIR__ . '/..' . '/aura/intl/src/FormatterLocator.php',
+        'Aura\\Intl\\IntlFormatter' => __DIR__ . '/..' . '/aura/intl/src/IntlFormatter.php',
+        'Aura\\Intl\\Package' => __DIR__ . '/..' . '/aura/intl/src/Package.php',
+        'Aura\\Intl\\PackageFactory' => __DIR__ . '/..' . '/aura/intl/src/PackageFactory.php',
+        'Aura\\Intl\\PackageLocator' => __DIR__ . '/..' . '/aura/intl/src/PackageLocator.php',
+        'Aura\\Intl\\PackageLocatorInterface' => __DIR__ . '/..' . '/aura/intl/src/PackageLocatorInterface.php',
+        'Aura\\Intl\\Translator' => __DIR__ . '/..' . '/aura/intl/src/Translator.php',
+        'Aura\\Intl\\TranslatorFactory' => __DIR__ . '/..' . '/aura/intl/src/TranslatorFactory.php',
+        'Aura\\Intl\\TranslatorInterface' => __DIR__ . '/..' . '/aura/intl/src/TranslatorInterface.php',
+        'Aura\\Intl\\TranslatorLocator' => __DIR__ . '/..' . '/aura/intl/src/TranslatorLocator.php',
+        'Aura\\Intl\\TranslatorLocatorFactory' => __DIR__ . '/..' . '/aura/intl/src/TranslatorLocatorFactory.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -1036,6 +1085,67 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         'FastRoute\\RouteCollector' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteCollector.php',
         'FastRoute\\RouteParser' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser.php',
         'FastRoute\\RouteParser\\Std' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser/Std.php',
+        'Gettext\\BaseTranslator' => __DIR__ . '/..' . '/gettext/gettext/src/BaseTranslator.php',
+        'Gettext\\Extractors\\Blade' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Blade.php',
+        'Gettext\\Extractors\\Csv' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Csv.php',
+        'Gettext\\Extractors\\CsvDictionary' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/CsvDictionary.php',
+        'Gettext\\Extractors\\Extractor' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Extractor.php',
+        'Gettext\\Extractors\\ExtractorInterface' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/ExtractorInterface.php',
+        'Gettext\\Extractors\\Jed' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Jed.php',
+        'Gettext\\Extractors\\JsCode' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/JsCode.php',
+        'Gettext\\Extractors\\Json' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Json.php',
+        'Gettext\\Extractors\\JsonDictionary' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/JsonDictionary.php',
+        'Gettext\\Extractors\\Mo' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Mo.php',
+        'Gettext\\Extractors\\PhpArray' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/PhpArray.php',
+        'Gettext\\Extractors\\PhpCode' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/PhpCode.php',
+        'Gettext\\Extractors\\Po' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Po.php',
+        'Gettext\\Extractors\\Twig' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Twig.php',
+        'Gettext\\Extractors\\VueJs' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/VueJs.php',
+        'Gettext\\Extractors\\Xliff' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Xliff.php',
+        'Gettext\\Extractors\\Yaml' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/Yaml.php',
+        'Gettext\\Extractors\\YamlDictionary' => __DIR__ . '/..' . '/gettext/gettext/src/Extractors/YamlDictionary.php',
+        'Gettext\\Generators\\Csv' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Csv.php',
+        'Gettext\\Generators\\CsvDictionary' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/CsvDictionary.php',
+        'Gettext\\Generators\\Generator' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Generator.php',
+        'Gettext\\Generators\\GeneratorInterface' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/GeneratorInterface.php',
+        'Gettext\\Generators\\Jed' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Jed.php',
+        'Gettext\\Generators\\Json' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Json.php',
+        'Gettext\\Generators\\JsonDictionary' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/JsonDictionary.php',
+        'Gettext\\Generators\\Mo' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Mo.php',
+        'Gettext\\Generators\\PhpArray' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/PhpArray.php',
+        'Gettext\\Generators\\Po' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Po.php',
+        'Gettext\\Generators\\Xliff' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Xliff.php',
+        'Gettext\\Generators\\Yaml' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/Yaml.php',
+        'Gettext\\Generators\\YamlDictionary' => __DIR__ . '/..' . '/gettext/gettext/src/Generators/YamlDictionary.php',
+        'Gettext\\GettextTranslator' => __DIR__ . '/..' . '/gettext/gettext/src/GettextTranslator.php',
+        'Gettext\\Languages\\Category' => __DIR__ . '/..' . '/gettext/languages/src/Category.php',
+        'Gettext\\Languages\\CldrData' => __DIR__ . '/..' . '/gettext/languages/src/CldrData.php',
+        'Gettext\\Languages\\Exporter\\Docs' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Docs.php',
+        'Gettext\\Languages\\Exporter\\Exporter' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Exporter.php',
+        'Gettext\\Languages\\Exporter\\Html' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Html.php',
+        'Gettext\\Languages\\Exporter\\Json' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Json.php',
+        'Gettext\\Languages\\Exporter\\Php' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Php.php',
+        'Gettext\\Languages\\Exporter\\Po' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Po.php',
+        'Gettext\\Languages\\Exporter\\Prettyjson' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Prettyjson.php',
+        'Gettext\\Languages\\Exporter\\Xml' => __DIR__ . '/..' . '/gettext/languages/src/Exporter/Xml.php',
+        'Gettext\\Languages\\FormulaConverter' => __DIR__ . '/..' . '/gettext/languages/src/FormulaConverter.php',
+        'Gettext\\Languages\\Language' => __DIR__ . '/..' . '/gettext/languages/src/Language.php',
+        'Gettext\\Merge' => __DIR__ . '/..' . '/gettext/gettext/src/Merge.php',
+        'Gettext\\Translation' => __DIR__ . '/..' . '/gettext/gettext/src/Translation.php',
+        'Gettext\\Translations' => __DIR__ . '/..' . '/gettext/gettext/src/Translations.php',
+        'Gettext\\Translator' => __DIR__ . '/..' . '/gettext/gettext/src/Translator.php',
+        'Gettext\\TranslatorInterface' => __DIR__ . '/..' . '/gettext/gettext/src/TranslatorInterface.php',
+        'Gettext\\Utils\\CsvTrait' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/CsvTrait.php',
+        'Gettext\\Utils\\DictionaryTrait' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/DictionaryTrait.php',
+        'Gettext\\Utils\\FunctionsScanner' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/FunctionsScanner.php',
+        'Gettext\\Utils\\HeadersExtractorTrait' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/HeadersExtractorTrait.php',
+        'Gettext\\Utils\\HeadersGeneratorTrait' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/HeadersGeneratorTrait.php',
+        'Gettext\\Utils\\JsFunctionsScanner' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/JsFunctionsScanner.php',
+        'Gettext\\Utils\\MultidimensionalArrayTrait' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/MultidimensionalArrayTrait.php',
+        'Gettext\\Utils\\ParsedComment' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/ParsedComment.php',
+        'Gettext\\Utils\\ParsedFunction' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/ParsedFunction.php',
+        'Gettext\\Utils\\PhpFunctionsScanner' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/PhpFunctionsScanner.php',
+        'Gettext\\Utils\\StringReader' => __DIR__ . '/..' . '/gettext/gettext/src/Utils/StringReader.php',
         'Interop\\Container\\ContainerInterface' => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container/ContainerInterface.php',
         'Interop\\Container\\Exception\\ContainerException' => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container/Exception/ContainerException.php',
         'Interop\\Container\\Exception\\NotFoundException' => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container/Exception/NotFoundException.php',
@@ -1055,10 +1165,17 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         'MmanagerPOS\\Domain\\Repository\\UserRepositoryInterface' => __DIR__ . '/../..' . '/src/Domain/User/UserRepositoryInterface.php',
         'MmanagerPOS\\Domain\\User\\CreateUser' => __DIR__ . '/../..' . '/src/Domain/User/CreateUser.php',
         'MmanagerPOS\\Domain\\User\\ListUsers' => __DIR__ . '/../..' . '/src/Domain/User/ListUsers.php',
+        'MmanagerPOS\\Domain\\User\\UserSession' => __DIR__ . '/../..' . '/src/Domain/User/UserSession.php',
+        'MmanagerPOS\\Middleware\\Auth' => __DIR__ . '/../..' . '/src/Middleware/Auth.php',
         'MmanagerPOS\\Persistence\\Doctrine\\UserRepository' => __DIR__ . '/../..' . '/src/Persistence/Doctrine/UserRepository.php',
         'MmanagerPOS\\Persistence\\RepositoryInterface' => __DIR__ . '/../..' . '/src/Domain/User/RepositoryInterface.php',
+        'MmanagerPOS\\Provider\\Aura' => __DIR__ . '/../..' . '/src/Provider/Aura.php',
         'MmanagerPOS\\Provider\\Doctrine' => __DIR__ . '/../..' . '/src/Provider/Doctrine.php',
+        'MmanagerPOS\\Provider\\MRbac' => __DIR__ . '/../..' . '/src/Provider/MRbac.php',
+        'MmanagerPOS\\Provider\\Monolog' => __DIR__ . '/../..' . '/src/Provider/Monolog.php',
+        'MmanagerPOS\\Provider\\PhpRenderer' => __DIR__ . '/../..' . '/src/Provider/PhpRenderer.php',
         'MmanagerPOS\\Provider\\Plates' => __DIR__ . '/../..' . '/src/Provider/Plates.php',
+        'MmanagerPOS\\Provider\\Session' => __DIR__ . '/../..' . '/src/Provider/Session.php',
         'MmanagerPOS\\Provider\\Slim' => __DIR__ . '/../..' . '/src/Provider/Slim.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
         'Monolog\\Formatter\\ChromePHPFormatter' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',
@@ -1592,6 +1709,7 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         'PhpOption\\None' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/None.php',
         'PhpOption\\Option' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Option.php',
         'PhpOption\\Some' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Some.php',
+        'PhpRbac\\Rbac' => __DIR__ . '/..' . '/owasp/phprbac/PhpRbac/src/PhpRbac/Rbac.php',
         'Pimple\\Container' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Container.php',
         'Pimple\\Exception\\ExpectedInvokableException' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Exception/ExpectedInvokableException.php',
         'Pimple\\Exception\\FrozenServiceException' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Exception/FrozenServiceException.php',
@@ -1822,6 +1940,7 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         'SebastianBergmann\\Timer\\RuntimeException' => __DIR__ . '/..' . '/phpunit/php-timer/src/RuntimeException.php',
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'SlimSession\\Helper' => __DIR__ . '/..' . '/bryanjhv/slim-session/src/SlimSession/Helper.php',
         'Slim\\App' => __DIR__ . '/..' . '/slim/slim/Slim/App.php',
         'Slim\\CallableResolver' => __DIR__ . '/..' . '/slim/slim/Slim/CallableResolver.php',
         'Slim\\CallableResolverAwareTrait' => __DIR__ . '/..' . '/slim/slim/Slim/CallableResolverAwareTrait.php',
@@ -1865,6 +1984,7 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         'Slim\\Interfaces\\RouteInterface' => __DIR__ . '/..' . '/slim/slim/Slim/Interfaces/RouteInterface.php',
         'Slim\\Interfaces\\RouterInterface' => __DIR__ . '/..' . '/slim/slim/Slim/Interfaces/RouterInterface.php',
         'Slim\\MiddlewareAwareTrait' => __DIR__ . '/..' . '/slim/slim/Slim/MiddlewareAwareTrait.php',
+        'Slim\\Middleware\\Session' => __DIR__ . '/..' . '/bryanjhv/slim-session/src/Slim/Middleware/Session.php',
         'Slim\\Routable' => __DIR__ . '/..' . '/slim/slim/Slim/Routable.php',
         'Slim\\Route' => __DIR__ . '/..' . '/slim/slim/Slim/Route.php',
         'Slim\\RouteGroup' => __DIR__ . '/..' . '/slim/slim/Slim/RouteGroup.php',
@@ -2073,6 +2193,7 @@ class ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitcedeab5466ec63864f1ab9fb39d63d9b::$classMap;
 

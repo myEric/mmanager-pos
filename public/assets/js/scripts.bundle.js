@@ -9475,13 +9475,10 @@ var KTLayout = function() {
     var header;
     var headerMenu;
     var headerMenuOffcanvas;
+    var mobileHeaderTopbarToggle;
 
     var asideMenu;
     var asideMenuOffcanvas;
-    var asideToggler;
-
-    var asideSecondary;
-    var asideSecondaryToggler;
 
     var scrollTop;
 
@@ -9496,24 +9493,16 @@ var KTLayout = function() {
                 desktop: true,
                 mobile: false
             },
-            offset: {},
+            offset: {
+                dekstop: parseInt(KTUtil.css(headerEl, 'height')) + 200
+            },
             minimize: {
                 desktop: {
                     on: 'kt-header--minimize'
                 },
-                mobile: {
-                    on: 'kt-header--minimize'
-                }
+                mobile: false
             }
         };
-
-        if (tmp = KTUtil.attr(headerEl, 'data-ktheader-minimize-offset')) {
-            options.offset.desktop = tmp;
-        }
-
-        if (tmp = KTUtil.attr(headerEl, 'data-ktheader-minimize-mobile-offset')) {
-            options.offset.mobile = tmp;
-        }
 
         header = new KTHeader('kt_header', options);
     }
@@ -9546,7 +9535,7 @@ var KTLayout = function() {
 
     // Header Topbar
     var initHeaderTopbar = function() {
-        asideToggler = new KTToggle('kt_header_mobile_topbar_toggler', {
+        mobileHeaderTopbarToggle = new KTToggle('kt_header_mobile_topbar_toggler', {
             target: 'body',
             targetState: 'kt-header__topbar--mobile-on',
             togglerState: 'kt-header-mobile__toolbar-topbar-toggler--active'
@@ -9644,6 +9633,7 @@ var KTLayout = function() {
         var menu = KTUtil.get('kt_aside_menu');
         var menuDesktopMode = (KTUtil.attr(menu, 'data-ktmenu-dropdown') === '1' ? 'dropdown' : 'accordion');
 
+        // Init scrollable menu container
         var scroll;
         if (KTUtil.attr(menu, 'data-ktmenu-scroll') === '1') {
             scroll = {
@@ -9652,23 +9642,18 @@ var KTLayout = function() {
                     var height;
 
                     if (KTUtil.isInResponsiveRange('desktop')) {
-                        height =  
-                            parseInt(KTUtil.getViewPort().height) - 
-                            parseInt(KTUtil.actualHeight('kt_aside_brand')) -
-                            parseInt(KTUtil.getByID('kt_aside_footer') ? KTUtil.actualHeight('kt_aside_footer') : 0);
+                        height = parseInt(KTUtil.getViewPort().height) - parseInt(KTUtil.actualHeight('kt_header', false)) - parseInt(KTUtil.actualHeight('kt_footer', false));
+                        height = height - parseInt(KTUtil.css(menu, 'marginTop')) - parseInt(KTUtil.css(menu, 'marginBottom'));
                     } else {
-                        height =  
-                            parseInt(KTUtil.getViewPort().height) - 
-                            parseInt(KTUtil.getByID('kt_aside_footer') ? KTUtil.actualHeight('kt_aside_footer') : 0);
+                        height = parseInt(KTUtil.getViewPort().height);
                     }
-
-                    height = height - (parseInt(KTUtil.css(menu, 'marginBottom')) + parseInt(KTUtil.css(menu, 'marginTop')));
 
                     return height;
                 }
             };
         }
 
+        // Init aside menu
         asideMenu = new KTMenu('kt_aside_menu', {
             // vertical scroll
             scroll: scroll,
@@ -9684,104 +9669,44 @@ var KTLayout = function() {
             accordion: {
                 expandAll: false // allow having multiple expanded accordions in the menu
             }
-        });
-    }
-
-    // Sidebar toggle
-    var initAsideToggler = function() {
-        if (!KTUtil.get('kt_aside_toggler')) {
-            return;
-        }
-
-        asideToggler = new KTToggle('kt_aside_toggler', {
-            target: 'body',
-            targetState: 'kt-aside--minimize',
-            togglerState: 'kt-aside__brand-aside-toggler--active'
-        }); 
-
-        asideToggler.on('toggle', function(toggle) {  
-            KTUtil.addClass(body, 'kt-aside--minimizing');
-
-            if (KTUtil.get('kt_page_portlet')) {
-                pageStickyPortlet.updateSticky();      
-            } 
-
-            KTUtil.transitionEnd(body, function() {
-                KTUtil.removeClass(body, 'kt-aside--minimizing');
-            });
-
-            headerMenu.pauseDropdownHover(800);
-            asideMenu.pauseDropdownHover(800);
-
-            // Remember state in cookie
-            Cookies.set('kt_aside_toggle_state', toggle.getState());
-            // to set default minimized left aside use this cookie value in your 
-            // server side code and add "kt-brand--minimize kt-aside--minimize" classes to
-            // the body tag in order to initialize the minimized left aside mode during page loading.
-        });
-
-        asideToggler.on('beforeToggle', function(toggle) {   
-            var body = KTUtil.get('body'); 
-            if (KTUtil.hasClass(body, 'kt-aside--minimize') === false && KTUtil.hasClass(body, 'kt-aside--minimize-hover')) {
-                KTUtil.removeClass(body, 'kt-aside--minimize-hover');
-            }
-        });
+        });       
     }
 
     // Scrolltop
     var initScrolltop = function() {
         var scrolltop = new KTScrolltop('kt_scrolltop', {
-            offset: 300,
-            speed: 600
+            offset: 200,
+            speed: 400
         });
     }
 
     // Init page sticky portlet
     var initPageStickyPortlet = function() {
-        var asideWidth = 255;
-        var asideMinimizeWidth = 78;
-
         return new KTPortlet('kt_page_portlet', {
             sticky: {
-                offset: parseInt(KTUtil.css( KTUtil.get('kt_header'), 'height')),
+                offset: parseInt(KTUtil.css( KTUtil.get('kt_header'), 'height')) + 200,
                 zIndex: 90,
                 position: {
                     top: function() {
                         if (KTUtil.isInResponsiveRange('desktop')) {
-                            var h = parseInt(KTUtil.css( KTUtil.get('kt_header'), 'height') );
-                            
-                            if (KTUtil.isInResponsiveRange('desktop') && KTUtil.hasClass(body, 'kt-subheader--fixed') && KTUtil.get('kt_subheader')) {
-                                h = h + parseInt(KTUtil.css( KTUtil.get('kt_subheader'), 'height') );
-                            }
-
-                            return h;
+                            return parseInt(KTUtil.css( KTUtil.get('kt_header'), 'height') );
                         } else {
                             return parseInt(KTUtil.css( KTUtil.get('kt_header_mobile'), 'height') );
                         }                        
                     },
                     left: function() {
-                        var left = 0;
-
-                        if (KTUtil.isInResponsiveRange('desktop')) {
-                            if (KTUtil.hasClass(body, 'kt-aside--minimize')) {
-                                left += asideMinimizeWidth;
-                            } else {
-                                left += asideWidth;
-                            }
+                        if (KTUtil.isInResponsiveRange('tablet-and-mobile')) {
+                            return parseInt(KTUtil.css( KTUtil.get('kt_body'), 'paddingLeft'));
                         }
 
-                        left += parseInt(KTUtil.css( KTUtil.get('kt_content_body'), 'paddingLeft'));
-
-                        return left; 
+                        return;
                     },
                     right: function() {
-                        var right = 0;
-
-                        if (KTUtil.isInResponsiveRange('desktop')) {                            
-                            right = parseInt(KTUtil.css( KTUtil.get('kt_content_body'), 'paddingRight'));
+                        if (KTUtil.isInResponsiveRange('tablet-and-mobile')) {
+                            return parseInt(KTUtil.css( KTUtil.get('kt_body'), 'paddingRight'));
                         }
 
-                        return right;
+                        return;
                     }
                 }
             }
@@ -9803,7 +9728,7 @@ var KTLayout = function() {
 		}
 
 		if (KTUtil.getByID('kt_footer')) {
-			height = height - parseInt(KTUtil.css('kt_footer', 'height'));
+			height = height - 40; //parseInt(KTUtil.css('kt_footer', 'height'));
 		}
 
 		if (KTUtil.getByID('kt_content')) {
@@ -9841,26 +9766,10 @@ var KTLayout = function() {
         initAside: function() { 
             initAside();
             initAsideMenu();
-            initAsideToggler();
-            
-            this.onAsideToggle(function(e) {
-                // Update sticky portlet
-                if (pageStickyPortlet) {
-                    pageStickyPortlet.updateSticky();
-                }
-
-                // Reload datatable
-                var datatables = $('.kt-datatable');
-                if (datatables) {
-                    datatables.each(function() {
-                        $(this).KTDatatable('redraw');
-                    });
-                }                
-            });
         },
 
-        initAsideSecondary: function() { 
-            initAsideSecondary();
+        getAsideMenu: function() {
+            return asideMenu;
         },
 
         initPageStickyPortlet: function() {
@@ -9876,38 +9785,6 @@ var KTLayout = function() {
             });
 
             initPageStickyPortlet();
-        },
-
-        getAsideMenu: function() {
-            return asideMenu;
-        },
-
-        onAsideToggle: function(handler) {
-            if (typeof asideToggler.element !== 'undefined') {
-                asideToggler.on('toggle', handler);
-            }
-        },
-
-        getAsideToggler: function() {
-            return asideToggler;
-        },
-
-        openAsideSecondary: function() {
-            asideSecondaryToggler.toggleOn();
-        },
-
-        closeAsideSecondary: function() {
-            asideSecondaryToggler.toggleOff();
-        },
-
-        getAsideSecondaryToggler: function() {
-            return asideSecondaryToggler;
-        },
-
-        onAsideSecondaryToggle: function(handler) {
-            if (asideSecondaryToggler) {
-                asideSecondaryToggler.on('toggle', handler);
-            }
         },
 
         closeMobileAsideMenuOffcanvas: function() {

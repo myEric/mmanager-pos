@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: m'Manager POS\n"
+"POT-Creation-Date: 2019-05-19 00:29+0200\n"
+"PO-Revision-Date: 2019-05-19 00:30+0200\n"
+"Language-Team: m'Manager Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ../../templates\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: fr_FR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/layout.phtml:142 admin/layout.phtml:1117
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: admin/layout.phtml:1000
+msgid "Hi,"
+msgstr "Salut,"
+
+#: admin/layout.phtml:1093
+msgid "Sign Out"
+msgstr "Se déconnecter"
+
+#: admin/layout.phtml:1122
+msgid "Home"
+msgstr "Accueil"
+
+#: user/login.phtml:116 user/login.phtml:137
+msgid "Sign In"
+msgstr "Connexion"
+
+#: user/login.phtml:128
+msgid "Remember me"
+msgstr "Se souvenir de moi"
+
+#: user/login.phtml:133
+msgid "Forget Password ?"
+msgstr "Mot de passe oublié ?"
+
+#: user/login.phtml:143 user/login.phtml:169
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+#: user/login.phtml:144
+msgid "Enter your details to create your account:"
+msgstr "Entrez vos coordonnées pour créer votre compte:"
+
+#: user/login.phtml:148
+msgid "Fullname"
+msgstr "Nom complet"
+
+#: user/login.phtml:151 user/login.phtml:181
+msgid "Email"
+msgstr "E-mail"
+
+#: user/login.phtml:154
+msgid "Password"
+msgstr "Mot de passe"
+
+#: user/login.phtml:157
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+#: user/login.phtml:162
+#, php-format
+msgid "I Agree the %s terms and conditions"
+msgstr "J’accepte %s les termes et conditions"
+
+#: user/login.phtml:170 user/login.phtml:185
+msgid "Cancel"
+msgstr "Annuler"
+
+#: user/login.phtml:176
+msgid "Forgotten Password ?"
+msgstr "Mot de passe oublié?"
+
+#: user/login.phtml:177
+msgid "Enter your email to reset your password:"
+msgstr "Entrez votre email pour réinitialiser votre mot de passe:"
+
+#: user/login.phtml:184
+msgid "Request"
+msgstr "Demander"
+
+#: user/login.phtml:191
+msgid "Don't have an account yet ?"
+msgstr "Vous n’avez pas encore de compte?"
+
+#: user/login.phtml:194
+msgid "Sign Up !"
+msgstr "Inscrivez-vous !"
+
+msgid "Resources"
+msgstr "Resources"

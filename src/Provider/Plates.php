@@ -8,6 +8,8 @@ use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Projek\Slim\Plates as ServiceProvider;
 use Slim\App;
+use Aura\Intl\TranslatorLocatorFactory;
+use Aura\Intl\Package;
 
 /**
  * A ServiceProvider for registering services related
@@ -23,6 +25,7 @@ class Plates implements ServiceProviderInterface
         $cnt['view'] = function (Container $cnt): ServiceProvider {
             $config = $cnt['settings']['plates'];
             $adminPath = $cnt['settings']['plates']['adminPath'];
+            $userPath = $cnt['settings']['plates']['userPath'];
             $emailPath = $cnt['settings']['plates']['emailPath'];
 
             $view = new \Projek\Slim\Plates($config);
@@ -35,9 +38,12 @@ class Plates implements ServiceProviderInterface
             $view->registerFunction('lowercase', function ($string) {
                 return strtolower($string);
             });
-
+            $view->registerFunction('fchar', function ($string) {
+                return strtoupper($string[0]);
+            });
             // Add folders
             $view->addFolder('admin', $adminPath, true);
+            $view->addFolder('user', $userPath, true);
             $view->addFolder('emails', $emailPath, true);
 
             // Set \Psr\Http\Message\ResponseInterface object

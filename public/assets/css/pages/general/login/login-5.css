@@ -118,12 +118,12 @@
           .kt-login.kt-login--v5 .kt-login__right .kt-login__wrapper .kt-login__form .form-control::-webkit-input-placeholder {
             color: #93959e; }
           .kt-login.kt-login--v5 .kt-login__right .kt-login__wrapper .kt-login__form .form-control:focus::-moz-placeholder {
-            color: #5d78ff;
+            color: #2c77f4;
             opacity: 1; }
           .kt-login.kt-login--v5 .kt-login__right .kt-login__wrapper .kt-login__form .form-control:focus:-ms-input-placeholder {
-            color: #5d78ff; }
+            color: #2c77f4; }
           .kt-login.kt-login--v5 .kt-login__right .kt-login__wrapper .kt-login__form .form-control:focus::-webkit-input-placeholder {
-            color: #5d78ff; }
+            color: #2c77f4; }
           .kt-login.kt-login--v5 .kt-login__right .kt-login__wrapper .kt-login__form .form-control.form-control-last {
             border-bottom: 0 !important; }
         .kt-login.kt-login--v5 .kt-login__right .kt-login__wrapper .kt-login__form .form-control.is-valid + .valid-feedback,

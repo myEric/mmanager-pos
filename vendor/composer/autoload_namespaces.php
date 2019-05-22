@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
+    'PhpRbac' => array($vendorDir . '/owasp/phprbac/PhpRbac/src'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
 );
