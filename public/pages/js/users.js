@@ -16,7 +16,7 @@ var Users = (function($){
 			dataType: 'json',
 			success: uerLoginServerResponse
 		};
-		$("#user-login-form").submit(function() {
+		$("#login-form").submit(function() {
 			$(".btn-submit").attr("disabled","disabled");
 			$(this).ajaxSubmit(options);	
 			return false;
@@ -51,10 +51,10 @@ var Users = (function($){
             btn.addClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', true);
 
             form.ajaxSubmit({
-                url: '/user/auth',
+                url: $("#login-form").attr('action'),
                 success: function(response, status, xhr, $form) {
                 	if (response.success == true) {
-                		location.replace("/");
+                		location.replace(response.redirect);
                 	} else {
                 		btn.removeClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', false);
                 		showErrorMsg(form, 'danger', 'Incorrect username or password. Please try again.');

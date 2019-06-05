@@ -15,20 +15,25 @@ class Auth
      *
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function __construct($router) {
+    public function __construct($router, $domain=null) {
         $this->router = $router;
-        $this->is_authenticated = self::is_authenticated();
+        $this->is_authenticated = self::is_authenticated($domain);
     }
     public function __invoke($request, $response, $next)
     {
         if ($this->is_authenticated) {
             $response = $next($request, $response);
         } else {
-            $response = $response->withRedirect($this->router->pathFor('user-login'));
+            $response = $response->withRedirect($this->router->pathFor('client-login'));
         }
         return $response;
     }
-    public function is_authenticated() {
-        return (isset($_SESSION['user_name'])) ? true : false;
+    /**
+     * Check is user is logged in and determines user domain
+     * @param type $domain 
+     * @return type bool
+     */
+    public function is_authenticated($domain) {
+        return (isset($_SESSION['user_name']) && $_SESSION['user_domain'] == $domain) ? true : false;
     }
 }

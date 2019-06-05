@@ -26,7 +26,9 @@ class Plates implements ServiceProviderInterface
             $config = $cnt['settings']['plates'];
             $adminPath = $cnt['settings']['plates']['adminPath'];
             $userPath = $cnt['settings']['plates']['userPath'];
+            $clientPath = $cnt['settings']['plates']['clientPath'];
             $emailPath = $cnt['settings']['plates']['emailPath'];
+            $authPath = $cnt['settings']['plates']['authPath'];
 
             $view = new \Projek\Slim\Plates($config);
 
@@ -43,7 +45,9 @@ class Plates implements ServiceProviderInterface
             });
             // Add folders
             $view->addFolder('admin', $adminPath, true);
+            $view->addFolder('auth', $authPath, true);
             $view->addFolder('user', $userPath, true);
+            $view->addFolder('client', $clientPath, true);
             $view->addFolder('emails', $emailPath, true);
 
             // Set \Psr\Http\Message\ResponseInterface object

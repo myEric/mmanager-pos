@@ -56,8 +56,10 @@ return [
             'fileExtension' => 'phtml',
             // Template extension (default: false) see: http://platesphp.com/extensions/asset/
             'timestampInFilename' => false,
+            'authPath' => __DIR__ . '/../templates/auth/',
             'adminPath' => __DIR__ . '/../templates/admin/',
             'userPath' => __DIR__ . '/../templates/user/',
+            'clientPath' => __DIR__ . '/../templates/client/',
             'emailPath' => __DIR__ . '/../templates/emails/',
         ],
         // Locale settings
